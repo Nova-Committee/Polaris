@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "polaris:item/zhu_que_template"
+    }
+}
