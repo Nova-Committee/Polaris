@@ -7,7 +7,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SmithingTemplateItem;
 import net.minecraftforge.registries.RegistryObject;
 import org.xkmc.polaris.Polaris;
-import org.xkmc.polaris.common.item.StarsArmors;
+import org.xkmc.polaris.common.item.armors.FlyingArmors.*;
+import org.xkmc.polaris.common.item.armors.MSArmor.*;
+import org.xkmc.polaris.common.item.armors.StarCommonArmors;
 import org.xkmc.polaris.common.item.tools.end_essence.*;
 import org.xkmc.polaris.common.item.tools.stars.*;
 
@@ -128,42 +130,43 @@ public class PolarisItems {
 
 
     public static final RegistryObject<Item> StardustHelmet = Registration.armorItem("stardust_helmet",
-            () -> new StarsArmors(PolarisArmorMaterial.STARDUST, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARDUST, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> StardustChest = Registration.armorItem("stardust_chestplate",
-            () -> new StarsArmors(PolarisArmorMaterial.STARDUST,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARDUST,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> StardustLeggings = Registration.armorItem("stardust_leggings",
-            () -> new StarsArmors(PolarisArmorMaterial.STARDUST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARDUST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> StardustBoots = Registration.armorItem("stardust_boots",
-            () -> new StarsArmors(PolarisArmorMaterial.STARDUST, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARDUST, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static final RegistryObject<Item> StarburstHelmet = Registration.armorItem("starburst_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.STARBURST, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARBURST, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> StarburstChest = Registration.armorItem("starburst_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.STARBURST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARBURST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> StarburstLeggings = Registration.armorItem("starburst_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.STARBURST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARBURST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> StarburstBoots = Registration.armorItem("starburst_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.STARBURST, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new StarCommonArmors(PolarisArmorMaterial.STARBURST, ArmorItem.Type.BOOTS, new Item.Properties()));
+
 
 
     public static final RegistryObject<Item> StarLordHelmet = Registration.armorItem("star_lord_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.STAR_LORD, ArmorItem.Type.HELMET, new Item.Properties().setNoRepair()));
+            () -> new StarLordArmors(PolarisArmorMaterial.STAR_LORD, ArmorItem.Type.HELMET, new Item.Properties().setNoRepair()));
 
     public static final RegistryObject<Item> StarLordChest = Registration.armorItem("star_lord_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.STAR_LORD,  ArmorItem.Type.CHESTPLATE, new Item.Properties().setNoRepair()));
+            () -> new StarLordArmors(PolarisArmorMaterial.STAR_LORD,  ArmorItem.Type.CHESTPLATE, new Item.Properties().setNoRepair()));
 
     public static final RegistryObject<Item> StarLordLeggings = Registration.armorItem("star_lord_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.STAR_LORD, ArmorItem.Type.LEGGINGS, new Item.Properties().setNoRepair()));
+            () -> new StarLordArmors(PolarisArmorMaterial.STAR_LORD, ArmorItem.Type.LEGGINGS, new Item.Properties().setNoRepair()));
 
     public static final RegistryObject<Item> StarLordBoots = Registration.armorItem("star_lord_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.STAR_LORD, ArmorItem.Type.BOOTS, new Item.Properties().setNoRepair()));
+            () -> new StarLordArmors(PolarisArmorMaterial.STAR_LORD, ArmorItem.Type.BOOTS, new Item.Properties().setNoRepair()));
 
 
     public static final RegistryObject<Item> MSBaseHelmet = Registration.armorItem("ms_base_helmet",
@@ -179,69 +182,72 @@ public class PolarisItems {
             () -> new ArmorItem(PolarisArmorMaterial.MSBase, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
+
     public static final RegistryObject<Item> MSWhiteTigerHelmet = Registration.armorItem("ms_white_tiger_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.MSWhiteTiger, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new WhiteTigerArmors(PolarisArmorMaterial.MSWhiteTiger, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> MSWhiteTigerChest = Registration.armorItem("ms_white_tiger_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.MSWhiteTiger,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new WhiteTigerArmors(PolarisArmorMaterial.MSWhiteTiger,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> MSWhiteTigerLeggings = Registration.armorItem("ms_white_tiger_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.MSWhiteTiger, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new WhiteTigerArmors(PolarisArmorMaterial.MSWhiteTiger, ArmorItem.Type.LEGGINGS,new Item.Properties()));
 
     public static final RegistryObject<Item> MSWhiteTigerBoots = Registration.armorItem("ms_white_tiger_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.MSWhiteTiger, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new WhiteTigerArmors(PolarisArmorMaterial.MSWhiteTiger, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static final RegistryObject<Item> MSBlueDragonHelmet = Registration.armorItem("ms_blue_dragon_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlueDragon, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new BlueDragonArmors(PolarisArmorMaterial.MSBlueDragon, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> MSBlueDragonChest = Registration.armorItem("ms_blue_dragon_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlueDragon,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new BlueDragonArmors(PolarisArmorMaterial.MSBlueDragon,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> MSBlueDragonLeggings = Registration.armorItem("ms_blue_dragon_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlueDragon, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new BlueDragonArmors(PolarisArmorMaterial.MSBlueDragon, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> MSBlueDragonBoots = Registration.armorItem("ms_blue_dragon_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlueDragon, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new BlueDragonArmors(PolarisArmorMaterial.MSBlueDragon, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static final RegistryObject<Item> MSVermilionBirdHelmet = Registration.armorItem("ms_vermilion_bird_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.MSVermilionBird, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new VermilionBirdArmors(PolarisArmorMaterial.MSVermilionBird, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> MSVermilionBirdChest = Registration.armorItem("ms_vermilion_bird_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.MSVermilionBird,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new VermilionBirdArmors(PolarisArmorMaterial.MSVermilionBird,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> MSVermilionBirdLeggings = Registration.armorItem("ms_vermilion_bird_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.MSVermilionBird, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new VermilionBirdArmors(PolarisArmorMaterial.MSVermilionBird, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> MSVermilionBirdBoots = Registration.armorItem("ms_vermilion_bird_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.MSVermilionBird, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new VermilionBirdArmors(PolarisArmorMaterial.MSVermilionBird, ArmorItem.Type.BOOTS, new Item.Properties()));
 
 
     public static final RegistryObject<Item> MSBlackTortoiseHelmet = Registration.armorItem("ms_black_tortoise_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlackTortoise, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new BlackTortoiseArmors(PolarisArmorMaterial.MSBlackTortoise, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> MSBlackTortoiseChest = Registration.armorItem("ms_black_tortoise_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlackTortoise,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new BlackTortoiseArmors(PolarisArmorMaterial.MSBlackTortoise,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> MSBlackTortoiseLeggings = Registration.armorItem("ms_black_tortoise_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlackTortoise, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new BlackTortoiseArmors(PolarisArmorMaterial.MSBlackTortoise, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> MSBlackTortoiseBoots = Registration.armorItem("ms_black_tortoise_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.MSBlackTortoise, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new BlackTortoiseArmors(PolarisArmorMaterial.MSBlackTortoise, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+
 
 
     public static final RegistryObject<Item> SupremeGenesisHelmet = Registration.armorItem("supreme_genesis_helmet",
-            () -> new ArmorItem(PolarisArmorMaterial.SupremeGenesis, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new SupremeGenesisArmors(PolarisArmorMaterial.SupremeGenesis, ArmorItem.Type.HELMET, new Item.Properties().setNoRepair()));
 
     public static final RegistryObject<Item> SupremeGenesisChest = Registration.armorItem("supreme_genesis_chestplate",
-            () -> new ArmorItem(PolarisArmorMaterial.SupremeGenesis,  ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new SupremeGenesisArmors(PolarisArmorMaterial.SupremeGenesis,  ArmorItem.Type.CHESTPLATE, new Item.Properties().setNoRepair()));
 
     public static final RegistryObject<Item> SupremeGenesisLeggings = Registration.armorItem("supreme_genesis_leggings",
-            () -> new ArmorItem(PolarisArmorMaterial.SupremeGenesis, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new SupremeGenesisArmors(PolarisArmorMaterial.SupremeGenesis, ArmorItem.Type.LEGGINGS, new Item.Properties().setNoRepair()));
 
     public static final RegistryObject<Item> SupremeGenesisBoots = Registration.armorItem("supreme_genesis_boots",
-            () -> new ArmorItem(PolarisArmorMaterial.SupremeGenesis, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new SupremeGenesisArmors(PolarisArmorMaterial.SupremeGenesis, ArmorItem.Type.BOOTS, new Item.Properties().setNoRepair()));
     //已删除
 //    public static final RegistryObject<Item> SupremeGenesisWhiteHelmet = Registration.armorItem("supreme_genesis_white_helmet",
 //            () -> new ArmorItem(PolarisArmorMaterial.SupremeGenesisWhite, ArmorItem.Type.HELMET, new Item.Properties()));
