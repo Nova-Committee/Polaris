@@ -119,5 +119,8 @@
     "itemGroup.tab.polaris_armors": "北极星 - 盔甲",
     "itemGroup.tab.polaris_blocks": "北极星 - 方块",
     "itemGroup.tab.polaris_miscellaneous": "北极星 - 杂项",
-    "screen.polaris.obsidian_nether_future": "下届合金炼制炉"
+    "screen.polaris.obsidian_nether_future": "下届合金炼制炉",
+    "tooltip.polaris.wearing_all": "当装备全套盔甲时:",
+    "tooltip.polaris.flying": "启用创造飞行"
+
 }

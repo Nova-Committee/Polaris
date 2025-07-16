@@ -119,5 +119,7 @@
   "itemGroup.tab.polaris_armors": "Polaris - Armors",
   "itemGroup.tab.polaris_blocks": "Polaris - Blocks",
   "itemGroup.tab.polaris_miscellaneous": "Polaris - Miscellaneous",
-  "screen.polaris.obsidian_nether_future": "obsidian nether future"
+  "screen.polaris.obsidian_nether_future": "obsidian nether future",
+  "tooltip.polaris.wearing_all": "When wearing all:",
+  "tooltip.polaris.flying": "Creative flying Enable"
 }
