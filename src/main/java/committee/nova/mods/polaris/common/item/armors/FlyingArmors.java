@@ -2,6 +2,7 @@ package committee.nova.mods.polaris.common.item.armors;
 
 import committee.nova.mods.polaris.common.item.UnDamageArmors;
 import committee.nova.mods.polaris.handler.EffectArmorHandler;
+import committee.nova.mods.polaris.registry.PolarisArmorMaterial;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffect;
@@ -19,12 +20,12 @@ import java.util.List;
  */
 public class FlyingArmors {
     public static class FlyingEffectArmors extends UnDamageArmors {
-        public FlyingEffectArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public FlyingEffectArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
     }
     public static class StarLordArmors extends FlyingEffectArmors {
-        public StarLordArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public StarLordArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
 
@@ -39,7 +40,7 @@ public class FlyingArmors {
         }
     }
     public static class SupremeGenesisArmors extends FlyingEffectArmors{
-        public SupremeGenesisArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public SupremeGenesisArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
 

@@ -41,7 +41,7 @@ public class FlyingAbilityHandler {
     }
 
 
-    public static void handleChestState(Player player, String key, boolean hasChest, List<MobEffect> addEffects) {
+    public static void handleChestState(Player player, String key, boolean hasChest) {
         boolean isFlyingGameMode = !ToolUtils.isPlayingMode(player);
         FlightInfo flightInfo = entitiesWithFlight.computeIfAbsent(key, uuid -> new FlightInfo());
         if (isFlyingGameMode || hasChest) {
@@ -63,7 +63,6 @@ public class FlyingAbilityHandler {
                 for (MobEffectInstance potion : Collections2.filter(effects, potion -> !potion.getEffect().isBeneficial())) {
                     player.removeEffect(potion.getEffect());
                 }
-                for (MobEffect effect : addEffects)  player.addEffect(new MobEffectInstance(effect, -1));
             }
         } else {
             if (flightInfo.hadFlightItem) {

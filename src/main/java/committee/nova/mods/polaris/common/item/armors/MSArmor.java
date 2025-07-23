@@ -2,6 +2,7 @@ package committee.nova.mods.polaris.common.item.armors;
 
 import committee.nova.mods.polaris.common.item.UnDamageArmors;
 import committee.nova.mods.polaris.handler.EffectArmorHandler;
+import committee.nova.mods.polaris.registry.PolarisArmorMaterial;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffect;
@@ -19,7 +20,7 @@ import java.util.List;
  */
 public class MSArmor {
     public static class WhiteTigerArmors extends UnDamageArmors{
-        public WhiteTigerArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public WhiteTigerArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
         @Override
@@ -32,7 +33,7 @@ public class MSArmor {
         }
     }
     public static class BlueDragonArmors extends UnDamageArmors{
-        public BlueDragonArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public BlueDragonArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
         @Override
@@ -45,7 +46,7 @@ public class MSArmor {
         }
     }
     public static class VermilionBirdArmors extends UnDamageArmors{
-        public VermilionBirdArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public VermilionBirdArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
         @Override
@@ -58,7 +59,7 @@ public class MSArmor {
         }
     }
     public static class BlackTortoiseArmors extends UnDamageArmors{
-        public BlackTortoiseArmors(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
+        public BlackTortoiseArmors(PolarisArmorMaterial pMaterial, Type pType, Properties pProperties) {
             super(pMaterial, pType, pProperties);
         }
         @Override

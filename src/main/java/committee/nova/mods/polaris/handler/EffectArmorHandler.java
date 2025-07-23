@@ -29,7 +29,6 @@ public class EffectArmorHandler {
         List<MobEffect> armorEffects = new ArrayList<>();
         armorEffects.add(MobEffects.DIG_SPEED);
         armorEffects.add(MobEffects.DAMAGE_RESISTANCE);
-        armorEffects.add(MobEffects.HEALTH_BOOST);
         armorEffects.add(MobEffects.DAMAGE_BOOST);
         armorEffects.add(MobEffects.CONDUIT_POWER);
         armorEffects.add(MobEffects.LUCK);
@@ -46,7 +45,6 @@ public class EffectArmorHandler {
 
     public static List<MobEffect> MSBlueDragonEffects() {
         List<MobEffect> armorEffects = new ArrayList<>();
-        armorEffects.add(MobEffects.HEALTH_BOOST);
         armorEffects.add(MobEffects.DIG_SPEED);
         armorEffects.add(MobEffects.CONDUIT_POWER);
         return armorEffects;
@@ -54,7 +52,6 @@ public class EffectArmorHandler {
 
     public static List<MobEffect> MSVermilionBirdEffects() {
         List<MobEffect> armorEffects = new ArrayList<>();
-        armorEffects.add(MobEffects.HEALTH_BOOST);
         armorEffects.add(MobEffects.DIG_SPEED);
         armorEffects.add(MobEffects.FIRE_RESISTANCE);
         return armorEffects;
@@ -62,7 +59,6 @@ public class EffectArmorHandler {
 
     public static List<MobEffect> MSBlackTortoiseEffects() {
         List<MobEffect> armorEffects = new ArrayList<>();
-        armorEffects.add(MobEffects.HEALTH_BOOST);
         armorEffects.add(MobEffects.SATURATION);
         armorEffects.add(MobEffects.DAMAGE_RESISTANCE);
         return armorEffects;
@@ -70,7 +66,6 @@ public class EffectArmorHandler {
     public static List<MobEffect> starLordEffects() {
         List<MobEffect> armorEffects = new ArrayList<>();
         armorEffects.add(MobEffects.DIG_SPEED);
-        armorEffects.add(MobEffects.HEALTH_BOOST);
         return armorEffects;
     }
 
@@ -88,7 +83,7 @@ public class EffectArmorHandler {
             boolean hasCommonArmor = ToolUtils.isPlayerWearingAll(player, item -> item instanceof StarCommonArmors);
 
 
-            FlyingAbilityHandler.handleChestState(player, key, hasFlyingArmor, supremeGenesisEffects());
+            FlyingAbilityHandler.handleChestState(player, key, hasFlyingArmor);
             updateEffects(hasCommonArmor, player, starLordEffects());
             updateEffects(hasStarLordArmor, player, starLordEffects());
             updateEffects(hasSupremeGenesisArmor, player, supremeGenesisEffects());
@@ -103,5 +98,8 @@ public class EffectArmorHandler {
 
     public static void updateEffects(boolean hasAbility, Player player, List<MobEffect> addEffects){
         if (hasAbility) for (MobEffect effect : addEffects)  player.addEffect(new MobEffectInstance(effect, -1));
+        else {
+            for (MobEffect effect : addEffects) player.removeEffect(effect);
+        }
     }
 }

@@ -2,6 +2,7 @@ package committee.nova.mods.polaris.common.item.armors;
 
 import committee.nova.mods.polaris.common.item.UnDamageArmors;
 import committee.nova.mods.polaris.handler.EffectArmorHandler;
+import committee.nova.mods.polaris.registry.PolarisArmorMaterial;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffect;
@@ -15,7 +16,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class StarCommonArmors extends UnDamageArmors {
-    public StarCommonArmors(ArmorMaterial materialIn, Type slots, Properties settings) {
+    public StarCommonArmors(PolarisArmorMaterial materialIn, Type slots, Properties settings) {
         super(materialIn, slots, settings);
     }
 

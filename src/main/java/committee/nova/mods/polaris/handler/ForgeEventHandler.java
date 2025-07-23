@@ -23,6 +23,8 @@ public class ForgeEventHandler {
                 event.setOutput(PolarisItems.ActivatingCore3.get().getDefaultInstance());
             } else if (event.getLeft().is(PolarisItems.InactiveCore4.get())) {
                 event.setOutput(PolarisItems.ActivatingCore4.get().getDefaultInstance());
+            } else if (event.getLeft().is(PolarisItems.InactiveCorePower.get())) {
+                event.setOutput(PolarisItems.ActivatingCorePower.get().getDefaultInstance());
             }
         }
 
