@@ -8,6 +8,6 @@ import net.minecraft.world.item.SwordItem;
  */
 public class RefinedNetherSword extends SwordItem {
     public RefinedNetherSword() {
-        super(PolarisToolTiers.REFINED_NETHER, 12, -2, new Properties());
+        super(PolarisToolTiers.REFINED_NETHER, 11, -2.3f, new Properties());
     }
 }

@@ -8,6 +8,6 @@ import net.minecraft.world.item.HoeItem;
  */
 public class RefinedNetherHoe extends HoeItem {
     public RefinedNetherHoe() {
-        super(PolarisToolTiers.REFINED_NETHER, 2, 2, new Properties());
+        super(PolarisToolTiers.REFINED_NETHER, 1, 0, new Properties());
     }
 }

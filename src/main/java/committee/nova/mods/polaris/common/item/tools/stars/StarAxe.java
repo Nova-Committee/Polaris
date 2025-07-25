@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
  */
 public class StarAxe extends AxeItem {
     public StarAxe() {
-        super(PolarisToolTiers.STARS, 15, 1, new Properties());
+        super(PolarisToolTiers.STARS, 22, -2.9F, new Properties());
     }
     @Override
     public boolean isDamageable(ItemStack stack) {

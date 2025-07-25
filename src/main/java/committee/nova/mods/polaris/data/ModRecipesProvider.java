@@ -26,8 +26,8 @@ public class ModRecipesProvider extends RecipeProvider implements IConditionBuil
 
     @Override
     protected void buildRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.NETHERITE_INGOT), RecipeCategory.MISC, PolarisItems.NetherAlloyEssence.get(), 3f, 2400);
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(PolarisItems.NetherAlloyIngotEssence.get()), RecipeCategory.MISC, PolarisItems.EndEssence.get(), 3f, 3600);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(Items.NETHERITE_INGOT), RecipeCategory.MISC, PolarisItems.NetherAlloyEssence.get(), 3f, 2400).unlockedBy("has_item", has(Items.NETHERITE_INGOT)).save(consumer);
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(PolarisItems.NetherAlloyIngotEssence.get()), RecipeCategory.MISC, PolarisItems.EndEssence.get(), 3f, 3600).unlockedBy("has_item", has(PolarisItems.NetherAlloyIngotEssence.get())).save(consumer);
 
         smithing(
                 Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE,
