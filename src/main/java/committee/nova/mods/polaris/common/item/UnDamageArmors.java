@@ -89,7 +89,8 @@ public class UnDamageArmors extends ArmorItem {
 
     public void onArmorTicks(ItemStack stack, Level level, Player player) {
         boolean wearingAll = ToolUtils.isPlayerWearingAllByMaterial(player, material -> material.equals(this.armorMaterial));
-        if (wearingAll) for (MobEffect effect : this.armorMaterial.getArmorEffects())  player.addEffect(new MobEffectInstance(effect, -1));
+        if (wearingAll)
+            for (MobEffect effect : this.armorMaterial.getArmorEffects()) player.addEffect(new MobEffectInstance(effect, -1, 0, false, true));
         else {
             for (MobEffect effect : this.armorMaterial.getArmorEffects()) player.removeEffect(effect);
         }
