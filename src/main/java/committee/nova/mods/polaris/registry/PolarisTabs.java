@@ -40,7 +40,7 @@ public class PolarisTabs {
 
     public static final RegistryObject<CreativeModeTab> TAB_POLARIS_ARMORS = TABS.register("polaris_armors", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tab.polaris_armors"))
-            .icon(Items.DIAMOND_HELMET::getDefaultInstance)
+            .icon(() -> PolarisItems.StarLordChest.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 for (var item : ACCEPT_ARMORS){
                     output.accept(item.get());

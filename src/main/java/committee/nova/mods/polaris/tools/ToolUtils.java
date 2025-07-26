@@ -1,5 +1,7 @@
 package committee.nova.mods.polaris.tools;
 
+import committee.nova.mods.polaris.common.item.UnDamageArmors;
+import committee.nova.mods.polaris.registry.PolarisArmorMaterial;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -28,6 +30,19 @@ public class ToolUtils {
             }
             ItemStack stack = player.getItemBySlot(slot);
             if (stack.isEmpty() || !(predicate.test(stack.getItem()))) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static boolean isPlayerWearingAllByMaterial(LivingEntity player, Predicate<PolarisArmorMaterial> material) {
+        for (EquipmentSlot slot : EquipmentSlot.values()) {
+            if (slot.getType() != EquipmentSlot.Type.ARMOR) {
+                continue;
+            }
+            ItemStack stack = player.getItemBySlot(slot);
+            if (stack.isEmpty() || !(stack.getItem() instanceof UnDamageArmors armor && material.test(armor.getArmorMaterial()))) {
                 return false;
             }
         }
