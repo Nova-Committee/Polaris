@@ -9,7 +9,7 @@ import net.minecraft.world.item.PickaxeItem;
  */
 public class StarPickaxe extends PickaxeItem {
     public StarPickaxe() {
-        super(PolarisToolTiers.STARS, 11, -2.6F, new Properties());
+        super(PolarisToolTiers.STARS, 10, -2.6F, new Properties());
     }
     @Override
     public boolean isDamageable(ItemStack stack) {

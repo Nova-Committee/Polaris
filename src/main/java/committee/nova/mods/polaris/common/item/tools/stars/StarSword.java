@@ -9,7 +9,7 @@ import net.minecraft.world.item.SwordItem;
  */
 public class StarSword extends SwordItem {
     public StarSword() {
-        super(PolarisToolTiers.STARS, 19, -2.3F, new Properties());
+        super(PolarisToolTiers.STARS, 18, -2.3F, new Properties());
     }
 
     @Override

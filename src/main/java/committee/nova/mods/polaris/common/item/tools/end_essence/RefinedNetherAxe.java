@@ -8,6 +8,6 @@ import net.minecraft.world.item.AxeItem;
  */
 public class RefinedNetherAxe extends AxeItem {
     public RefinedNetherAxe() {
-        super(PolarisToolTiers.REFINED_NETHER, 14, -3, new Properties());
+        super(PolarisToolTiers.REFINED_NETHER, 13, -3, new Properties());
     }
 }

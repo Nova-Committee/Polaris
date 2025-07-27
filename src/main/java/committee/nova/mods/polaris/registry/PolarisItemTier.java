@@ -11,6 +11,8 @@ import javax.annotation.Nonnull;
 import java.util.function.Supplier;
 
 public enum PolarisItemTier implements Tier {
+    REFINED_NETHER(10, 4062, 0f, 0F, 25, () -> Ingredient.of(PolarisItems.EndEssence.get())),
+    STARS(100, 8888, 0f, 0F, 30, Ingredient::of)
     ;
 
     @Getter

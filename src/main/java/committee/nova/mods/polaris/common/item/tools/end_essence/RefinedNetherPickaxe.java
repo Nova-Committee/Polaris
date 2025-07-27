@@ -8,6 +8,6 @@ import net.minecraft.world.item.PickaxeItem;
  */
 public class RefinedNetherPickaxe extends PickaxeItem {
     public RefinedNetherPickaxe() {
-        super(PolarisToolTiers.REFINED_NETHER, 8, -2.6F, new Properties());
+        super(PolarisToolTiers.REFINED_NETHER, 7, -2.6F, new Properties());
     }
 }

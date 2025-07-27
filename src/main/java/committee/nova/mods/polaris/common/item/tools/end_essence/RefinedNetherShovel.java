@@ -8,6 +8,6 @@ import net.minecraft.world.item.ShovelItem;
  */
 public class RefinedNetherShovel extends ShovelItem {
     public RefinedNetherShovel() {
-        super(PolarisToolTiers.REFINED_NETHER, 7, -2.8F, new Properties());
+        super(PolarisToolTiers.REFINED_NETHER, 6, -2.8F, new Properties());
     }
 }

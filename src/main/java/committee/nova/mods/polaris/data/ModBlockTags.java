@@ -31,7 +31,7 @@ public class ModBlockTags extends IntrinsicHolderTagsProvider<Block> {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).addTag(BlockTags.NEEDS_IRON_TOOL).add(
+        tag(BlockTags.NEEDS_IRON_TOOL).add(
                 PolarisBlocks.ObsidianNetherFurnace.get(),
                 PolarisBlocks.AlloySmithingTable.get()
                 );

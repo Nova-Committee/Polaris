@@ -2,6 +2,7 @@ package committee.nova.mods.polaris;
 
 import committee.nova.mods.polaris.registry.PolarisClientSetup;
 import committee.nova.mods.polaris.registry.PolarisDataGen;
+import committee.nova.mods.polaris.registry.PolarisToolTiers;
 import committee.nova.mods.polaris.registry.Registration;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;

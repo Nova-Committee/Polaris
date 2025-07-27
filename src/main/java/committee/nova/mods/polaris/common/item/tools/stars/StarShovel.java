@@ -9,7 +9,7 @@ import net.minecraft.world.item.ShovelItem;
  */
 public class StarShovel extends ShovelItem {
     public StarShovel() {
-        super(PolarisToolTiers.STARS, 9, -2.7F, new Properties());
+        super(PolarisToolTiers.STARS, 8, -2.7F, new Properties());
     }
     @Override
     public boolean isDamageable(ItemStack stack) {

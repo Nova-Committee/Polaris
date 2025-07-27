@@ -9,7 +9,7 @@ import net.minecraft.world.item.ItemStack;
  */
 public class StarHoe extends HoeItem {
     public StarHoe() {
-        super(PolarisToolTiers.STARS, 3, 0, new Properties());
+        super(PolarisToolTiers.STARS, 2, 0, new Properties());
     }
     @Override
     public boolean isDamageable(ItemStack stack) {

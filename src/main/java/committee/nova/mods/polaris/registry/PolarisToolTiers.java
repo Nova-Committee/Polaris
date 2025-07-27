@@ -13,9 +13,9 @@ import java.util.List;
  * @author cnlimiter
  */
 public class PolarisToolTiers {
-    public static final Tier REFINED_NETHER = TierSortingRegistry.registerTier(new ForgeTier(5, 4062, 0f, 0F, 25, PolarisTags.Blocks.NEEDS_REFINED_NETHER_TOOL,
-            () -> Ingredient.of(PolarisItems.EndEssence.get())), Polaris.rl( "end_essence"), List.of(Tiers.NETHERITE), List.of());
-    public static final Tier STARS =TierSortingRegistry.registerTier(new ForgeTier(6, 8888, 0f, 0F, 30, PolarisTags.Blocks.NEEDS_STARS_TOOL,
+    public static Tier REFINED_NETHER = TierSortingRegistry.registerTier(new ForgeTier(10, 4062, 14f, 1F, 25, PolarisTags.Blocks.NEEDS_REFINED_NETHER_TOOL,
+            () -> Ingredient.of(PolarisItems.EndEssence.get())), Polaris.rl( "refined"), List.of(Tiers.NETHERITE), List.of());
+    public static Tier STARS = TierSortingRegistry.registerTier(new ForgeTier(100, 8888, 20f, 1F, 30, PolarisTags.Blocks.NEEDS_STARS_TOOL,
             Ingredient::of), Polaris.rl( "stars"), List.of(REFINED_NETHER), List.of());
 
 }

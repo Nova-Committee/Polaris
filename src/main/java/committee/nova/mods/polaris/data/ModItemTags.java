@@ -27,7 +27,7 @@ public class ModItemTags extends IntrinsicHolderTagsProvider<Item> {
 
 
     @Override
-    protected void addTags(HolderLookup.@NotNull Provider p_256380_) {
+    protected void addTags(HolderLookup.@NotNull Provider pProvider) {
         tag(ItemTags.PICKAXES).add(PolarisItems.refinedNetherPickAxe.get(), PolarisItems.starPickAxe.get());
         tag(ItemTags.AXES).add(PolarisItems.refinedNetherAxe.get(), PolarisItems.starAxe.get());
         tag(ItemTags.SHOVELS).add(PolarisItems.refinedNetherShovel.get(), PolarisItems.starShovel.get());
