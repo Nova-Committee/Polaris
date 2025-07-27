@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "polaris:flame_of_the_soul"
+  },
+  "base": {
+    "item": "polaris:ms_base_leggings"
+  },
+  "result": {
+    "item": "polaris:ms_black_tortoise_leggings"
+  },
+  "template": {
+    "item": "polaris:xuan_wu_template"
+  }
+}

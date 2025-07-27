@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "polaris:activating_core_1"
+    },
+    "b": {
+      "item": "polaris:activating_core_2"
+    },
+    "c": {
+      "item": "polaris:activating_core_3"
+    },
+    "d": {
+      "item": "polaris:activating_core_4"
+    },
+    "x": {
+      "item": "polaris:spirit_of_divinity"
+    }
+  },
+  "pattern": [
+    "a b",
+    " x ",
+    "c d"
+  ],
+  "result": {
+    "item": "polaris:inactive_core_power"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "polaris:ms_blue_dragon_chestplate"
+    },
+    "b": {
+      "item": "polaris:ms_white_tiger_chestplate"
+    },
+    "c": {
+      "item": "polaris:ms_vermilion_bird_chestplate"
+    },
+    "d": {
+      "item": "polaris:ms_black_tortoise_chestplate"
+    },
+    "e": {
+      "item": "polaris:nether_star"
+    },
+    "f": {
+      "item": "polaris:activating_core_power"
+    },
+    "g": {
+      "item": "polaris:spirit_of_divinity"
+    },
+    "x": {
+      "item": "polaris:star_lord_chestplate"
+    }
+  },
+  "pattern": [
+    "afb",
+    "exe",
+    "cgd"
+  ],
+  "result": {
+    "item": "polaris:supreme_genesis_chestplate"
+  },
+  "show_notification": true
+}

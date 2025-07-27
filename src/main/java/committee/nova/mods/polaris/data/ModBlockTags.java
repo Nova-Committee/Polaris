@@ -25,7 +25,7 @@ public class ModBlockTags extends IntrinsicHolderTagsProvider<Block> {
 
     @Override
     public @NotNull String getName() {
-        return "Avaritia Block Tags";
+        return "Polaris Block Tags";
     }
 
 

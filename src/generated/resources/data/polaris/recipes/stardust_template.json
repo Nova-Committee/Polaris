@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "polaris:activating_core_2"
+    },
+    "b": {
+      "item": "polaris:nether_alloy_essence"
+    },
+    "x": {
+      "item": "minecraft:netherite_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    " a ",
+    "bxb",
+    " b "
+  ],
+  "result": {
+    "item": "polaris:stardust_template"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "x": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "y": {
+      "item": "polaris:nether_alloy_ingot_essence"
+    }
+  },
+  "pattern": [
+    " x ",
+    "xyx",
+    " x "
+  ],
+  "result": {
+    "item": "polaris:inactive_core_1"
+  },
+  "show_notification": true
+}

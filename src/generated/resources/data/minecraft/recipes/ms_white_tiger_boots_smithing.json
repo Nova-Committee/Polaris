@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "polaris:flame_of_the_soul"
+  },
+  "base": {
+    "item": "polaris:ms_base_boots"
+  },
+  "result": {
+    "item": "polaris:ms_white_tiger_boots"
+  },
+  "template": {
+    "item": "polaris:bai_hu_template"
+  }
+}

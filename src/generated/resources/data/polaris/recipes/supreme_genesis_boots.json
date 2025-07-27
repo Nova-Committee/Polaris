@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "polaris:ms_blue_dragon_boots"
+    },
+    "b": {
+      "item": "polaris:ms_white_tiger_boots"
+    },
+    "c": {
+      "item": "polaris:ms_vermilion_bird_boots"
+    },
+    "d": {
+      "item": "polaris:ms_black_tortoise_boots"
+    },
+    "e": {
+      "item": "polaris:nether_star"
+    },
+    "f": {
+      "item": "polaris:activating_core_power"
+    },
+    "g": {
+      "item": "polaris:spirit_of_divinity"
+    },
+    "x": {
+      "item": "polaris:star_lord_boots"
+    }
+  },
+  "pattern": [
+    "afb",
+    "exe",
+    "cgd"
+  ],
+  "result": {
+    "item": "polaris:supreme_genesis_boots"
+  },
+  "show_notification": true
+}

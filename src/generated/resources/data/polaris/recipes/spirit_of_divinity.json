@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "polaris:nether_star"
+    },
+    "b": {
+      "item": "minecraft:conduit"
+    },
+    "x": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "pattern": [
+    "aba",
+    "bxb",
+    "aba"
+  ],
+  "result": {
+    "item": "polaris:spirit_of_divinity"
+  },
+  "show_notification": true
+}

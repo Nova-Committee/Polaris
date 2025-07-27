@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "polaris:qing_long_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "polaris:bai_hu_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "polaris:zhu_que_template"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "polaris:xuan_wu_template"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 1.5,
+        "min": 1.0
+      }
+    }
+  ],
+  "random_sequence": "minecraft:chests/simple_dungeon"
+}

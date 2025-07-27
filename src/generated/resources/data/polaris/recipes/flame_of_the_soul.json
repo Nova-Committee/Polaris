@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "minecraft:blaze_powder"
+    },
+    "b": {
+      "item": "minecraft:ghast_tear"
+    },
+    "x": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    "aba",
+    "bxb",
+    "aba"
+  ],
+  "result": {
+    "item": "polaris:flame_of_the_soul"
+  },
+  "show_notification": true
+}

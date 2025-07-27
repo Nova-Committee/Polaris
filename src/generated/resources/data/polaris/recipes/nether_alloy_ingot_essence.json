@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "x": {
+      "item": "polaris:nether_alloy_essence"
+    },
+    "y": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " x ",
+    "xyx",
+    " x "
+  ],
+  "result": {
+    "item": "polaris:nether_alloy_ingot_essence"
+  },
+  "show_notification": true
+}

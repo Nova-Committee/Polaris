@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "polaris:activating_core_4"
+    },
+    "b": {
+      "item": "polaris:end_alloy_ingot"
+    },
+    "c": {
+      "item": "polaris:nether_star"
+    },
+    "x": {
+      "item": "polaris:starburst_template"
+    }
+  },
+  "pattern": [
+    "cac",
+    "bxb",
+    "cbc"
+  ],
+  "result": {
+    "item": "polaris:star_lord_template"
+  },
+  "show_notification": true
+}

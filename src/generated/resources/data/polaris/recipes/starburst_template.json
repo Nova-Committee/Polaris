@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "polaris:activating_core_3"
+    },
+    "b": {
+      "item": "polaris:nether_alloy_ingot_essence"
+    },
+    "x": {
+      "item": "polaris:stardust_template"
+    }
+  },
+  "pattern": [
+    " a ",
+    "bxb",
+    " b "
+  ],
+  "result": {
+    "item": "polaris:starburst_template"
+  },
+  "show_notification": true
+}

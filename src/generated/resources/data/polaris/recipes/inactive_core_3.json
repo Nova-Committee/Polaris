@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "x": {
+      "item": "polaris:activating_core_2"
+    },
+    "y": {
+      "item": "polaris:nether_alloy_ingot_essence"
+    }
+  },
+  "pattern": [
+    " x ",
+    "xyx",
+    " x "
+  ],
+  "result": {
+    "item": "polaris:inactive_core_3"
+  },
+  "show_notification": true
+}

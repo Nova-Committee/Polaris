@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "polaris:refined_nether_axe"
+    },
+    "b": {
+      "item": "polaris:spirit_of_divinity"
+    },
+    "x": {
+      "item": "polaris:end_alloy_ingot"
+    }
+  },
+  "pattern": [
+    " a ",
+    " x ",
+    " b "
+  ],
+  "result": {
+    "item": "polaris:star_axe"
+  },
+  "show_notification": true
+}
